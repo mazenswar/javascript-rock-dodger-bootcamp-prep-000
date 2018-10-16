@@ -105,8 +105,7 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
   else if(top > GAME_HEIGHT - 20) {
-    rock.remove();
-    ROCKS.shift();
+    GAME.removeChild(rock);
     }
   }
 
