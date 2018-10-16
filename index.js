@@ -146,12 +146,14 @@ function moveDodger(e) {
    if(e.which === LEFT_ARROW) {
      moveDodgerLeft();
      e.preventDefault();
-     //window.requestAnimationFrame(moveDodgerLeft);
+     e.stopPropogation();
+     window.requestAnimationFrame(moveDodgerLeft);
    }
    if(e.which === RIGHT_ARROW) {
      moveDodgerRight();
      e.preventDefault();
-    // window.requestAnimationFrame(moveDodgerRight);
+     e.stopPropogation();
+    window.requestAnimationFrame(moveDodgerRight);
    }
 }
 
